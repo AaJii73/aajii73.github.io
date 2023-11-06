@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button Click Example with jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Antti's button</h1>
+    <button id="button">Click Me</button>
+	<p> The assignment has been succesfully completed! </p>
+    <script>
+        $(document).ready(function() {
+			$("p").hide();
+            $("#button").click(function() {
+                $("p").show();
+            });
+        });
+    </script>
+</body>
+</html>
